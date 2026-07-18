@@ -118,8 +118,9 @@ Each event was audited by comparing the user's actual final group memberships an
 
 **Final roster — all 7 users, final state**
 ![Final Users List](./6.%20final%20user%20list.png)
-
 ---
+
+
 ## 7. Conclusion
 
 This audit demonstrates that identity lifecycle risk rarely originates from the *creation* of new accounts that step is usually well controlled but instead from the *transitions*: transfers and departures, where removing access is easy to overlook because no single owner is explicitly accountable for it. Both findings in this audit are common, realistic patterns seen in real organizations, and both map to a well-established control (NIST SP 800-53 AC-2) that most compliance frameworks already require. Closing this class of gap is less about better security tooling and more about ensuring an existing process has an explicit, accountable last step.
