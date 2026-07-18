@@ -1,4 +1,4 @@
-# Identity Lifecycle (JML) Audit Report — Brightleaf Consulting
+# Identity Lifecycle (JML) Audit Report | Brightleaf Consulting
 
 **Prepared by:** Toriola Anjolaoluwa
 **Platform audited:** Microsoft Entra ID
@@ -6,6 +6,14 @@
 **Scope:** Joiner, Mover, and Leaver identity lifecycle events for a simulated 6person organization
 
 ---
+
+## Overview
+
+This project simulates the three core moments in an employee's identity lifecycle — joining, transferring roles, and leaving inside a live Microsoft Entra ID tenant, then audits the results the way a GRC or IAM analyst would in a real environment. It's a hands on lab, not a written only exercise: every user, group, and access change referenced below was actually created and modified in Entra ID, with screenshots as evidence. The goal was to find out where access control naturally breaks down and it did, in exactly the two places most real organizations struggle with: transfers and offboarding.
+
+---
+
+
 
 ## 1. Executive Summary
 
@@ -104,18 +112,18 @@ Each event was audited by comparing the user's actual final group memberships an
 **Baseline — Dara Okafor (example of standard starting access)**
 ![Baseline Dara Okafor](./1.%20baseline%20dara%20okafor.png)
 
-**Joiner — Elena Vasquez (clean, role-appropriate access)**
+**Joiner - Elena Vasquez (clean, role-appropriate access)**
 ![Joiner Elena Vasquez](https://github.com/WorkWithAnjola/jml-access-audit/blob/71e140065292fad74e0701ce7640f217a79888d9/3.%20%20joiner%20elena%20vasquez.png)
-**Mover — Marcus Webb (leftover access from prior role, Finding 2)**
+**Mover - Marcus Webb (leftover access from prior role, Finding 2)**
 ![Mover Marcus Webb](./2.%20mover%20marcus%20webb%20after.png)
 
-**Leaver — Tom Ellison, before departure (active access)**
+**Leaver - Tom Ellison, before departure (active access)**
 ![Leaver Before Tom Ellison](./4.%20baseline%20tom%20ellison.png)
 
-**Leaver — Tom Ellison, after offboarding (disabled, Finding 3)**
+**Leaver - Tom Ellison, after offboarding (disabled, Finding 3)**
 ![Leaver After Tom Ellison](./5.%20leaver%20tom%20ellison%20disabled.png)
 
-**Final roster — all 7 users, final state**
+**Final roster - all 7 users, final state**
 ![Final Users List](./6.%20final%20user%20list.png)
 ---
 
@@ -123,3 +131,18 @@ Each event was audited by comparing the user's actual final group memberships an
 ## 7. Conclusion
 
 This audit demonstrates that identity lifecycle risk rarely originates from the *creation* of new accounts that step is usually well controlled but instead from the *transitions*: transfers and departures, where removing access is easy to overlook because no single owner is explicitly accountable for it. Both findings in this audit are common, realistic patterns seen in real organizations, and both map to a well-established control (NIST SP 800-53 AC-2) that most compliance frameworks already require. Closing this class of gap is less about better security tooling and more about ensuring an existing process has an explicit, accountable last step.
+
+
+---
+
+
+The underlying lesson connects to the other two projects in this portfolio: strong detection and strong vendor oversight both eventually depend on knowing exactly who has access to what, and for how long. Identity governance isn't a separate discipline from SOC work or thirdparty risk, it's the layer underneath both.
+
+
+## 8. Beyond This Audit
+
+A one time review like this one is useful, but it's a snapshot, it proves these two gaps existed on the day they were checked, not that they won't quietly reappear next quarter. Turning a single audit into a durable practice means a few things:
+
+- **Access reviews on a schedule, not a trigger** - most organizations only look closely at a user's access when something prompts it (an audit, an incident, a new hire's manager complaining). A recurring cadence (quarterly is common) catches drift like Marcus's leftover access *before* it's discovered the hard way.
+- **Ownership, not just process** — a checklist only works if someone is accountable for the last step. Access removal during a transfer and account disablement during offboarding both need a named owner and a deadline, not just a shared understanding that "someone" handles it.
+- **Metrics that make the invisible visible** — time to deprovision and percentage of transfers with fully removed prior access are both measurable. What gets measured tends to get fixed; what stays anecdotal tends to repeat.
