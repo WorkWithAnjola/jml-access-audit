@@ -102,22 +102,22 @@ Each event was audited by comparing the user's actual final group memberships an
 ## 6. Evidence
 
 **Baseline — Dara Okafor (example of standard starting access)**
-![Baseline Dara Okafor](./1. baseline dara okafor.png)
+![Baseline Dara Okafor](1. baseline dara okafor.png)
 
 **Joiner — Elena Vasquez (clean, role-appropriate access)**
-![Joiner Elena Vasquez](./3. joiner elena vasquez.png)
+![Joiner Elena Vasquez](3. joiner elena vasquez.png)
 
 **Mover — Marcus Webb (leftover access from prior role, Finding 2)**
-![Mover Marcus Webb](./2. mover marcus webb after.png)
+![Mover Marcus Webb](2. mover marcus webb after.png)
 
 **Leaver — Tom Ellison, before departure (active access)**
-![Leaver Before Tom Ellison](./4. baseline tom ellison.png)
+![Leaver Before Tom Ellison](4. baseline tom ellison.png)
 
 **Leaver — Tom Ellison, after offboarding (disabled, Finding 3)**
-![Leaver After Tom Ellison](./5. leaver tom ellison disabled.png)
+![Leaver After Tom Ellison](5. leaver tom ellison disabled.png)
 
 **Final roster — all 7 users, final state**
-![Final Users List](./6. final user list.png)
+![Final Users List](6. final user list.png)
 *(Screenshots referenced above are included in the `/screenshots` folder of this repository.)*
 
 ---
