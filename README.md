@@ -102,26 +102,24 @@ Each event was audited by comparing the user's actual final group memberships an
 ## 6. Evidence
 
 **Baseline — Dara Okafor (example of standard starting access)**
-![Baseline Dara Okafor](1. baseline dara okafor.png)
+![Baseline Dara Okafor](./1.%20baseline%20dara%20okafor.png)
 
 **Joiner — Elena Vasquez (clean, role-appropriate access)**
-![Joiner Elena Vasquez](3. joiner elena vasquez.png)
+![Joiner Elena Vasquez](./3.%20joiner%20elena%20vasquez.png)
 
 **Mover — Marcus Webb (leftover access from prior role, Finding 2)**
-![Mover Marcus Webb](2. mover marcus webb after.png)
+![Mover Marcus Webb](./2.%20mover%20marcus%20webb%20after.png)
 
 **Leaver — Tom Ellison, before departure (active access)**
-![Leaver Before Tom Ellison](4. baseline tom ellison.png)
+![Leaver Before Tom Ellison](./4.%20baseline%20tom%20ellison.png)
 
 **Leaver — Tom Ellison, after offboarding (disabled, Finding 3)**
-![Leaver After Tom Ellison](5. leaver tom ellison disabled.png)
+![Leaver After Tom Ellison](./5.%20leaver%20tom%20ellison%20disabled.png)
 
 **Final roster — all 7 users, final state**
-![Final Users List](6. final user list.png)
-*(Screenshots referenced above are included in the `/screenshots` folder of this repository.)*
+![Final Users List](./6.%20final%20user%20list.png)
 
 ---
-
 ## 7. Conclusion
 
 This audit demonstrates that identity lifecycle risk rarely originates from the *creation* of new accounts that step is usually well controlled but instead from the *transitions*: transfers and departures, where removing access is easy to overlook because no single owner is explicitly accountable for it. Both findings in this audit are common, realistic patterns seen in real organizations, and both map to a well-established control (NIST SP 800-53 AC-2) that most compliance frameworks already require. Closing this class of gap is less about better security tooling and more about ensuring an existing process has an explicit, accountable last step.
