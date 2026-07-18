@@ -105,8 +105,7 @@ Each event was audited by comparing the user's actual final group memberships an
 ![Baseline Dara Okafor](./1.%20baseline%20dara%20okafor.png)
 
 **Joiner — Elena Vasquez (clean, role-appropriate access)**
-![Joiner Elena Vasquez](./3.%20joiner%20elena%20vasquez.png)
-
+![Joiner Elena Vasquez](https://github.com/WorkWithAnjola/jml-access-audit/blob/71e140065292fad74e0701ce7640f217a79888d9/3.%20%20joiner%20elena%20vasquez.png)
 **Mover — Marcus Webb (leftover access from prior role, Finding 2)**
 ![Mover Marcus Webb](./2.%20mover%20marcus%20webb%20after.png)
 
