@@ -33,7 +33,7 @@ Each event was audited by comparing the user's actual final group memberships an
 
 ## 3. Findings
 
-### Finding 1 — Joiner Provisioning: No Issues Found ✅
+### Finding 1  Joiner Provisioning: No Issues Found ✅
 
 **User:** Elena Vasquez (new Sales hire)
 **Result:** Correctly assigned to Sales-Team, CRM-Access, and Company-All only — matching her role exactly, with no excess access granted.
@@ -41,7 +41,7 @@ Each event was audited by comparing the user's actual final group memberships an
 
 ---
 
-### Finding 2 — Mover Transfer: Prior Access Not Revoked 🔴 (High)
+### Finding 2  Mover Transfer: Prior Access Not Revoked 🔴 (High)
 
 **User:** Marcus Webb (Engineering → Sales transfer)
 **Observed:** Following his internal transfer, Marcus retained his original **Engineering-Team** and **Dev-Resources** group memberships in addition to his new **Sales-Team** and **CRM-Access** assignments. His final state included all five groups simultaneously.
@@ -54,7 +54,7 @@ Each event was audited by comparing the user's actual final group memberships an
 
 ---
 
-### Finding 3 — Leaver Deprovisioning: Delayed Account Deactivation 🔴 (High)
+### Finding 3  Leaver Deprovisioning: Delayed Account Deactivation 🔴 (High)
 
 **User:** Tom Ellison (departure)
 **Observed timeline:**
