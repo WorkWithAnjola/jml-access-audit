@@ -21,7 +21,7 @@ This audit simulated three core identity lifecycle events; a new hire (Joiner), 
 
 The audit found that **new user provisioning was handled correctly**, but identified two significant gaps in the **mover** and **leaver** processes: an internal transfer left prior department access intact rather than removing it, and account deactivation following departure was delayed well beyond a reasonable window. Both findings represent common, realistic identity governance failures and are mapped to NIST SP 800-53 control **AC-2 (Account Management)** below.
 
-**Overall audit result: 2 findings requiring remediation — Medium risk.**
+**Overall audit result: 2 findings requiring remediation - Medium risk.**
 
 ---
 
@@ -44,7 +44,7 @@ Each event was audited by comparing the user's actual final group memberships an
 ### Finding 1  Joiner Provisioning: No Issues Found ✅
 
 **User:** Elena Vasquez (new Sales hire)
-**Result:** Correctly assigned to Sales-Team, CRM-Access, and Company-All only — matching her role exactly, with no excess access granted.
+**Result:** Correctly assigned to Sales-Team, CRM-Access, and Company-All only - matching her role exactly, with no excess access granted.
 **Risk:** None. Included as a positive control example.
 
 ---
@@ -56,7 +56,7 @@ Each event was audited by comparing the user's actual final group memberships an
 
 **Why this matters:** Marcus now holds standing access to internal engineering tooling and resources despite no longer working in that department. This is one of the most common realworld identity gaps, provisioning new access during a transfer is usually handled promptly (often by IT or a manager request), while *removing* old access is frequently missed because no single step in most offboarding from old role workflows explicitly triggers it.
 
-**Risk if unaddressed:** Unnecessary standing access increases the organization's attack surface — a compromised account or insider risk scenario now has a broader blast radius than the employee's actual current role requires. This directly violates the principle of least privilege.
+**Risk if unaddressed:** Unnecessary standing access increases the organization's attack surface, a compromised account or insider risk scenario now has a broader blast radius than the employee's actual current role requires. This directly violates the principle of least privilege.
 
 **NIST SP 800-53 mapping:** **AC-2(g)**  accounts must be monitored and access modified in a timely manner when a user's role changes.
 
@@ -74,7 +74,7 @@ Each event was audited by comparing the user's actual final group memberships an
 
 **Gap:** **6 days** between departure and full account deactivation.
 
-**Why this matters:** During this window, Tom's account remained active with full access to Engineering-Team and Dev-Resources resources despite no longer being an employee. Whether this delay stems from a manual, checklist-driven offboarding process or a missed notification step, the outcome is the same: an unnecessary window where a departed employee's credentials could be used — by the former employee or anyone who obtained their credentials — without legitimate business justification.
+**Why this matters:** During this window, Tom's account remained active with full access to Engineering-Team and Dev-Resources resources despite no longer being an employee. Whether this delay stems from a manual, checklist-driven offboarding process or a missed notification step, the outcome is the same: an unnecessary window where a departed employee's credentials could be used by the former employee or anyone who obtained their credentials without legitimate business justification.
 
 **Risk if unaddressed:** Delayed deprovisioning is a well documented root cause in insider threat and post-termination access incidents. Even a short window is a meaningful exposure for accounts with access to sensitive systems.
 
@@ -87,8 +87,8 @@ Each event was audited by comparing the user's actual final group memberships an
 | Finding | Severity | Status |
 |---|---|---|
 | Joiner provisioning (Elena Vasquez) | None | ✅ Passed |
-| Mover — leftover access (Marcus Webb) | High | 🔴 Open |
-| Leaver — delayed deactivation (Tom Ellison) | High | 🔴 Open |
+| Mover - leftover access (Marcus Webb) | High | 🔴 Open |
+| Leaver - delayed deactivation (Tom Ellison) | High | 🔴 Open |
 
 ---
 
