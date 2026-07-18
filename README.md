@@ -9,7 +9,7 @@
 
 ## Overview
 
-This project simulates the three core moments in an employee's identity lifecycle — joining, transferring roles, and leaving inside a live Microsoft Entra ID tenant, then audits the results the way a GRC or IAM analyst would in a real environment. It's a hands on lab, not a written only exercise: every user, group, and access change referenced below was actually created and modified in Entra ID, with screenshots as evidence. The goal was to find out where access control naturally breaks down and it did, in exactly the two places most real organizations struggle with: transfers and offboarding.
+This project simulates the three core moments in an employee's identity lifecycle - joining, transferring roles, and leaving inside a live Microsoft Entra ID tenant, then audits the results the way a GRC or IAM analyst would in a real environment. It's a hands on lab, not a written only exercise: every user, group, and access change referenced below was actually created and modified in Entra ID, with screenshots as evidence. The goal was to find out where access control naturally breaks down and it did, in exactly the two places most real organizations struggle with: transfers and offboarding.
 
 ---
 
